@@ -1,7 +1,7 @@
-import { Category } from "../model/Category";
-import { ICategriesRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
+import { Category } from "../entities/Category";
+import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
 
-class PostgresCategoriesRepository implements ICategriesRepository {
+class PostgresCategoriesRepository implements ICategoriesRepository {
     findByName(name: string): Category {
         console.log(name)
         return null;
