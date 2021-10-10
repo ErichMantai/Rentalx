@@ -14,7 +14,7 @@ class CreateCategoryController {
             await createCategoryUseCase.execute({ name, description });
 
             return response.status(201).send();
-        } catch (error) {
+        } catch {
             return response.status(404).json({ "error": "Category already exists!" })
         }
 
